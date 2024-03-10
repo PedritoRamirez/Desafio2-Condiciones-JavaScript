@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <title>Document</title>
+</head>
+<body>
+  <header>
+    <h1>Desafío 2 - Condiciones</h1>
+  </header>
+  <main>
+    <section class="problema1">
+      <h2>Primer problema desafio Condicionales en JavaScript</h2>
+      <img class="imagen" src="./assets/img/panda.jpg" alt="" onclick="  
+         evento = document.querySelector('.imagen');
+         if (click != true){
+          evento.style.border='2px solid red';
+          click = true;
+         }
+         else{
+          evento.style.border='none';
+          click=false;
+         }
+      ">   
+      <p>Haga click en la imagen para agregar o quitar borde</p>
+    </section>
+    <section class="problema2">
+      <h2>Segundo problema desafio Condicionales en JavaScript</h2>
+      <h3>Puedes llevar hasta 10 stickers en total</h3>
+      <div class="contenedor">
+        <div class="caja">
+          <img src="./assets/img/ball1.jpg" alt=""> 
+          <input type="text" id="caja1">
+          <p id="atento1">Ingresa una cantidad</p>
+        </div>
+        <div class="caja">
+          <img src="./assets/img/ball2.jpg" alt="">
+          <input type="text" id="caja2">
+          <p id="atento2">Ingresa una cantidad</p>
+        </div>
+        <div class="caja">
+          <img src="./assets/img/ball3.jpg" alt="">
+          <input type="text" id="caja3">
+          <p id="atento3">Ingresa una cantidad</p>
+        </div>
+      </div>
+      <p id="cantidad"></p>
+      <button onclick="
+        caja1 = document.querySelector('#caja1').value;      
+        caja2 = document.querySelector('#caja2').value;
+        caja3 = document.querySelector('#caja3').value;
+        total = Number(caja1) + Number(caja2) + Number(caja3);
+        var cantidad = document.querySelector('#cantidad');
+        if(total == 10){
+          cantidad.innerHTML = 'Llevas la cantidad maxima de stickers: '+ total;  
+        }else if(total >= 0 && total < 10){
+          cantidad.innerHTML = 'llevas: '+ total +' stickers';  
+        }else if(total>10){
+          cantidad.innerHTML = 'Llevas demasiados stickers llevas: '+ total;
+        }else{
+          cantidad.innerHTML = 'Estos valores no se pueden procesar';  
+        }
+        ">Verificar
+      </button>
+
+    </section>
+    <section class="problema3">
+      <h2>Tercer problema desafio Condicionales en JavaScript</h2>
+      <h3>Ingresa el password</h3>
+      <div class="cont3">
+        <select name="dig1" id="dig1">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <select name="dig2" id="dig2">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+        <select name="dig3" id="dig3">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+        </select>
+      </div>     
+      <button class="boton" onclick="
+        pass1 = document.querySelector('#dig1').value;
+        pass2 = document.querySelector('#dig2').value;
+        pass3 = document.querySelector('#dig3').value;
+        password = document.querySelector('.parrafo');
+        if(Number(pass1)==9 && Number(pass2)==1 && Number(pass3)==1){
+          password.innerHTML = 'Password 1 correcto';
+        }else if(Number(pass1)==7 && Number(pass2)==1 && Number(pass3)==4){
+          password.innerHTML = 'Password 2 es correcto';
+        }else{
+          password.innerHTML = 'Password incorrecto';
+        }
+        ">Ingresar
+      </button>
+      <p class="parrafo"></p>
+    </section>
+  </main>
+  <footer>
+    <script src="./assets/js/script.js"></script>  
+  </footer>
+  
+</body>
+
+</html>

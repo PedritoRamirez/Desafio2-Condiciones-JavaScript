@@ -1,0 +1,63 @@
+body{
+  background-color: rgb(205, 184, 224);
+}
+header{
+  text-align: center;
+}
+.problema1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.imagen{
+  margin-top: 30px;
+}
+/* *******************FIN PRIMER PROBLEMA************************************** */
+
+.problema2{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contenedor{
+  display: flex;
+  gap: 120px;
+}
+.caja{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#caja2{
+  margin-top: 15px;
+}
+#caja3{
+  margin-top: 7px;
+}
+#atento1{
+  text-align: center;
+}
+#atento2{
+  text-align: center;
+}
+#atento3{
+  text-align: center;
+}
+/* *******************FIN Segundo PROBLEMA************************************** */
+.problema3{
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cont3{
+  display: flex;
+}
+.boton{
+  margin-top: 10px;
+}
+/* *******************FIN Tercer PROBLEMA************************************** */
